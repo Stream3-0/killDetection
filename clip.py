@@ -21,7 +21,7 @@ class Clip:
 
         ff = ffmpy.FFmpeg(
             inputs = {url: None},
-            outputs= {rawPath: "-c copy"}
+            outputs= {rawPath: "-y -c copy"}
         )
 
         print(ff.cmd)
