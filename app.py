@@ -15,4 +15,12 @@ def get_timestamps():
 
 
 if __name__ == "__main__":
+    try:
+        os.makedirs("./clips/frames")
+        os.makedirs("./clips/raw")
+    except:
+        pass
+    
+    print(os.listdir())
+    
     app.run(host="0.0.0.0", debug=True, port=int(os.getenv('PORT', 5000)))
