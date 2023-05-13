@@ -1,4 +1,4 @@
-import json 
+import os
 from flask import Flask, request, jsonify 
 from clip import Clip 
 
@@ -14,4 +14,4 @@ def get_timestamps():
     return jsonify({'timestamps': {'kills': clip.identify_clips()}})
 
 
-app.run(port=33507)
+app.run(host="0.0.0.0", debug=True, port=int(os.getenv('PORT')))
