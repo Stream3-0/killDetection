@@ -1,7 +1,6 @@
 import cv2
 import os 
 import datetime
-import requests
 import ffmpy 
 
 template = cv2.imread('./skull.png')

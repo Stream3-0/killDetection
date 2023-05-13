@@ -1,0 +1,4 @@
+flask
+ffmpy
+opencv-python
+gunicorn
