@@ -14,4 +14,4 @@ def get_timestamps():
     return jsonify({'timestamps': {'kills': clip.identify_clips()}})
 
 
-app.run(debug=True)
+app.run(port=33507)
